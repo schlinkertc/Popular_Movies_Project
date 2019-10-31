@@ -48,6 +48,10 @@ def search_and_get(api_key,list_of_movies):
     
     return get_movies_timed(api_key,ids)
 
+## key test for reference while creating tables
+
+def key_test(list_of_dicts):
+    return [{key:type(d.get(key)) for key in d.keys()} for d in list_of_dicts] 
 
 
 #############Below are generic functions to query MovieDB################
